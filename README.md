@@ -1,4 +1,4 @@
-# ⚛️ Quantum K-Means Clustering
+# Quantum K-Means Clustering
 
 [![License](https://img.shields.io/badge/License-Proprietary-red.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://python.org)
@@ -6,7 +6,7 @@
 
 > **A genuine quantum computing implementation of K-Means clustering using SWAP test and quantum fidelity-based distance metrics.**
 
-## 🎯 Overview
+## Overview
 
 This project implements **authentic quantum K-Means clustering algorithms** that leverage fundamental quantum computing principles:
 
@@ -16,7 +16,7 @@ This project implements **authentic quantum K-Means clustering algorithms** that
 
 Unlike pseudo-quantum implementations, this project uses **real quantum circuits** executed on Qiskit's quantum simulators.
 
-## ✨ Key Features
+## Key Features
 
 | Feature | Description |
 |---------|-------------|
@@ -26,7 +26,7 @@ Unlike pseudo-quantum implementations, this project uses **real quantum circuits
 | **Comparative Analysis** | Side-by-side classical vs quantum performance evaluation |
 | **Scalable Design** | Works with datasets from hundreds to thousands of samples |
 
-## 🔬 Quantum Algorithms Implemented
+## Quantum Algorithms Implemented
 
 ### SWAP Test
 The SWAP test computes the quantum inner product |⟨ψ₁|ψ₂⟩|² using quantum interference:
@@ -50,14 +50,14 @@ Direct computation of state fidelity F = |⟨ψ₁|ψ₂⟩|² with distance:
 d = √(2(1-F))
 ```
 
-## 📊 Datasets
+## Datasets
 
 | Dataset | Samples | Features | Description |
 |---------|---------|----------|-------------|
 | Original (ENB2012) | 768 | 8 | Energy efficiency benchmark |
 | Quantum-Optimized | 4,998 | 16 | High-dimensional expanded dataset |
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 ```bash
@@ -75,7 +75,7 @@ python comprehensive_quantum_classical_analysis.py
 python create_quantum_optimized_dataset.py
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 quantum-kmeans/
@@ -93,7 +93,7 @@ quantum-kmeans/
 └── Report.md                                        # Detailed research report
 ```
 
-## 📈 Sample Results
+## Sample Results
 
 ### Classical vs Quantum Performance
 
@@ -106,7 +106,7 @@ quantum-kmeans/
 | Expanded (4998×16) | Quantum SWAP Test | 2 | varies |
 | Expanded (4998×16) | Quantum Fidelity | 4 | varies |
 
-## 🧠 Technical Details
+## Technical Details
 
 ### Quantum Encoding
 Classical data points are encoded into quantum states using **amplitude encoding**:
@@ -127,20 +127,20 @@ quantum_distance = √(2(1 - |⟨ψ₁|ψ₂⟩|))
 ### K-Means++ Initialization
 Uses intelligent centroid initialization for better convergence.
 
-## ⚠️ Limitations
+## Limitations
 
 - **Simulation Overhead**: Quantum circuits run on simulators, not actual quantum hardware
 - **Scalability**: SWAP test requires O(n×k) circuit executions per iteration
 - **Noise**: Statistical estimation introduces measurement uncertainty
 
-## 🔮 Future Work
+## Future Work
 
 - [ ] Implementation on IBM Quantum hardware
 - [ ] Variational quantum eigensolver (VQE) integration
 - [ ] Quantum error correction
 - [ ] Hybrid classical-quantum optimization
 
-## 📜 License
+## License
 
 This project is **proprietary software**. See [LICENSE](LICENSE) for details.
 
@@ -148,13 +148,13 @@ This project is **proprietary software**. See [LICENSE](LICENSE) for details.
 
 Unauthorized copying, modification, distribution, or use of this software is strictly prohibited without explicit written permission from the author.
 
-## 📚 References
+## References
 
 1. Quantum K-means algorithm - Lloyd, S., Mohseni, M., & Rebentrost, P. (2013)
 2. SWAP test for quantum states - Buhrman, H., et al. (2001)
 3. Qiskit Documentation - IBM Quantum
 
-## 👤 Author
+## Author
 
 **Sricharan**
 
