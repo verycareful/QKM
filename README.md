@@ -54,7 +54,7 @@ d = √(2(1-F))
 
 | Dataset | Samples | Features | Description |
 |---------|---------|----------|-------------|
-| Original (ENB2012) | 768 | 8 | Energy efficiency benchmark |
+| Original (ENB2012) | 768 | 10 | Energy efficiency benchmark (X1-X8 + Y1-Y2) |
 | Quantum-Optimized | 4,998 | 16 | High-dimensional expanded dataset |
 
 ## Quick Start

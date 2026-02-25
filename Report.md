@@ -6,7 +6,7 @@ This research presents a comprehensive implementation and evaluation of **genuin
 
 **Key Results:**
 - Implemented authentic quantum circuits using SWAP test for inner product estimation
-- Evaluated on 768-sample original and 4,998-sample expanded datasets
+- Evaluated on 768-sample original (10 features) and 4,998-sample expanded (16 features) datasets
 - Classical K-means achieved superior silhouette scores (0.39 vs 0.03 on original data)
 - Quantum methods demonstrated fundamentally different distance metrics based on Hilbert space geometry
 
@@ -104,7 +104,7 @@ where αᵢ = xᵢ / ||x||
 
 | Dataset | Samples | Features | Description |
 |---------|---------|----------|-------------|
-| Original (ENB2012) | 768 | 8 | Energy efficiency benchmark |
+| Original (ENB2012) | 768 | 10 | Energy efficiency benchmark (X1-X8, Y1-Y2) |
 | Expanded | 4,998 | 16 | High-dimensional synthetic data |
 
 ### 3.2 Implementation Details
@@ -115,8 +115,7 @@ where αᵢ = xᵢ / ||x||
 | Shots | 512 | N/A | N/A |
 | Max Iterations | 10 | 20 | 300 |
 | Initialization | K-means++ | K-means++ | K-means++ |
-| Qubits Used | 2×⌈log₂(d)⌉+1 | ⌈log₂(d)⌉ | N/A |
-
+| Qubits Used | 2×⌈log₂(d)⌉+1 | ⌈log₂(d)⌉ | N/A || Original Dataset Used | 10 features | 10 features | 10 features |
 ### 3.3 Evaluation Metrics
 - **Silhouette Score**: Measures cluster cohesion and separation [-1, 1]
 - **Inertia**: Sum of squared distances to centroids
@@ -124,7 +123,7 @@ where αᵢ = xᵢ / ||x||
 
 ## 4. Results
 
-### 4.1 Original Dataset (768 samples × 8 features)
+### 4.1 Original Dataset (768 samples × 10 features)
 
 | Method | Best k | Silhouette | Inertia | Time |
 |--------|--------|------------|---------|------|
@@ -324,6 +323,6 @@ This research demonstrates that while quantum K-means can be implemented using g
 
 **Generated:** January 25, 2026  
 **Analysis Runtime:** ~1.5 hours (full dataset evaluation)  
-**Author:** Sricharan
+**Author:** Sricharan (github.com/verycareful)
 
 *This report presents an honest evaluation of quantum K-means clustering, acknowledging both the theoretical promise and current practical limitations of quantum machine learning.*
