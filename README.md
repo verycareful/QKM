@@ -1,6 +1,6 @@
 # Quantum K-Means Clustering
 
-[![License](https://img.shields.io/badge/License-Proprietary-red.svg)](LICENSE)
+[![License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-blue.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://python.org)
 [![Qiskit](https://img.shields.io/badge/Qiskit-1.0+-purple.svg)](https://qiskit.org)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18802706.svg)](https://doi.org/10.5281/zenodo.18802706)
@@ -149,11 +149,20 @@ Uses intelligent centroid initialization for better convergence.
 
 ## License
 
-This project is **proprietary software**. See [LICENSE](LICENSE) for details.
+This project is licensed under **Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)**.
 
-**© 2026 All Rights Reserved**
+[![CC BY-NC 4.0](https://licensebuttons.net/l/by-nc/4.0/88x31.png)](https://creativecommons.org/licenses/by-nc/4.0/)
 
-Unauthorized copying, modification, distribution, or use of this software is strictly prohibited without explicit written permission from the author.
+**You are free to:**
+- Share and adapt the material
+- Use it for non-commercial purposes
+
+**On the condition that you:**
+- Provide appropriate attribution to the original author
+- Indicate if changes were made
+- Include a link to the license
+
+See the [full legal code](https://creativecommons.org/licenses/by-nc/4.0/legalcode) for details.
 
 ## References
 
