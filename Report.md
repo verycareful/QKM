@@ -6,7 +6,7 @@ This research presents a comprehensive implementation and evaluation of **genuin
 
 **Key Results:**
 - Implemented authentic quantum circuits using SWAP test for inner product estimation
-- Evaluated on 768-sample original (10 features) and 4,998-sample expanded (16 features) datasets
+- Evaluated on 768-sample original (8 features) and 4,998-sample expanded (16 features) datasets
 - Classical K-means achieved superior silhouette scores (0.39 vs 0.03 on original data)
 - Quantum methods demonstrated fundamentally different distance metrics based on Hilbert space geometry
 
@@ -104,7 +104,7 @@ where αᵢ = xᵢ / ||x||
 
 | Dataset | Samples | Features | Description |
 |---------|---------|----------|-------------|
-| Original (ENB2012) | 768 | 10 | Energy efficiency benchmark (X1-X8, Y1-Y2) |
+| Original (ENB2012) | 768 | 8 | Energy efficiency benchmark (X1-X8, targets excluded) |
 | Expanded | 4,998 | 16 | High-dimensional synthetic data |
 
 ### 3.2 Implementation Details
