@@ -1,5 +1,8 @@
 # Quantum K-Means Clustering
-
+[![Python](https://img.shields.io/badge/Python-3.9+-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
+[![Qiskit](https://img.shields.io/badge/Qiskit-1.0+-6929C4?style=flat-square&logo=qiskit&logoColor=white)](https://qiskit.org/)
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
+[![Status: Archived](https://img.shields.io/badge/Status-Archived-lightgrey?style=flat-square)](.)
 [![License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-blue.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://python.org)
 [![Qiskit](https://img.shields.io/badge/Qiskit-1.0+-purple.svg)](https://qiskit.org)
@@ -149,21 +152,12 @@ Uses intelligent centroid initialization for better convergence.
 
 ## License
 
-This project is licensed under **Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)**.
+Copyright © 2026 Sricharan Suresh (github.com/verycareful)
 
-[![CC BY-NC 4.0](https://licensebuttons.net/l/by-nc/4.0/88x31.png)](https://creativecommons.org/licenses/by-nc/4.0/)
+This project is licensed under the **[Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)**.
+You may use, modify, and distribute this software in accordance with Apache 2.0 terms.
 
-**You are free to:**
-- Share and adapt the material
-- Use it for non-commercial purposes
-
-**On the condition that you:**
-- Provide appropriate attribution to the original author
-- Indicate if changes were made
-- Include a link to the license
-
-See the [full legal code](https://creativecommons.org/licenses/by-nc/4.0/legalcode) for details.
-
+See the [LICENSE](LICENSE) file for full text and [NOTICE](NOTICE) for attribution information.
 ## References
 
 1. Quantum K-means algorithm - Lloyd, S., Mohseni, M., & Rebentrost, P. (2013)
