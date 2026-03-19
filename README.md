@@ -1,8 +1,9 @@
 # Quantum K-Means Clustering
-[![Python](https://img.shields.io/badge/Python-3.9+-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
-[![Qiskit](https://img.shields.io/badge/Qiskit-1.0+-6929C4?style=flat-square&logo=qiskit&logoColor=white)](https://qiskit.org/)
-[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
-[![Status: Archived](https://img.shields.io/badge/Status-Archived-lightgrey?style=flat-square)](.)
+
+[![License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-blue.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+[![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://python.org)
+[![Qiskit](https://img.shields.io/badge/Qiskit-1.0+-purple.svg)](https://qiskit.org)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18876209.svg)](https://doi.org/10.5281/zenodo.18876209)
 
 > **A genuine quantum computing implementation of K-Means clustering using SWAP test and quantum fidelity-based distance metrics.**
 
@@ -35,25 +36,25 @@ Unlike pseudo-quantum implementations, this project uses **real quantum circuits
 ## Quantum Algorithms Implemented
 
 ### SWAP Test
-The SWAP test computes the quantum inner product |âŸ¨Ïˆâ‚|Ïˆâ‚‚âŸ©|Â² using quantum interference:
+The SWAP test computes the quantum inner product |⟨ψ₁|ψ₂⟩|² using quantum interference:
 
 ```
-P(ancilla=0) = (1 + |âŸ¨Ïˆâ‚|Ïˆâ‚‚âŸ©|Â²) / 2
+P(ancilla=0) = (1 + |⟨ψ₁|ψ₂⟩|²) / 2
 ```
 
 **Circuit Structure:**
 ```
-|0âŸ© â”€â”€Hâ”€â”€â—â”€â”€Hâ”€â”€M
-         â”‚
-|Ïˆâ‚âŸ© â”€â”€â”€â”€Ã—â”€â”€â”€â”€
-         â”‚
-|Ïˆâ‚‚âŸ© â”€â”€â”€â”€Ã—â”€â”€â”€â”€
+|0⟩ ──H──●──H──M
+         │
+|ψ₁⟩ ────×────
+         │
+|ψ₂⟩ ────×────
 ```
 
 ### Quantum Fidelity
-Direct computation of state fidelity F = |âŸ¨Ïˆâ‚|Ïˆâ‚‚âŸ©|Â² with distance:
+Direct computation of state fidelity F = |⟨ψ₁|ψ₂⟩|² with distance:
 ```
-d = âˆš(2(1-F))
+d = √(2(1-F))
 ```
 
 ## Datasets
@@ -85,18 +86,18 @@ python create_quantum_optimized_dataset.py
 
 ```
 quantum-kmeans/
-â”œâ”€â”€ code/
-â”‚   â”œâ”€â”€ comprehensive_quantum_classical_analysis.py  # Main analysis script
-â”‚   â””â”€â”€ create_quantum_optimized_dataset.py          # Dataset generator
-â”œâ”€â”€ data/
-â”‚   â”œâ”€â”€ ENB2012_data.csv                             # Original dataset
-â”‚   â””â”€â”€ quantum_optimized_ENB_data.csv               # Expanded dataset
-â”œâ”€â”€ output/
-â”‚   â”œâ”€â”€ quantum_classical_analysis_report_*.txt      # Analysis reports
-â”‚   â””â”€â”€ quantum_classical_comparison_*.png           # Visualization plots
-â”œâ”€â”€ README.md
-â”œâ”€â”€ LICENSE
-â””â”€â”€ Report.md                                        # Detailed research report
+├── code/
+│   ├── comprehensive_quantum_classical_analysis.py  # Main analysis script
+│   └── create_quantum_optimized_dataset.py          # Dataset generator
+├── data/
+│   ├── ENB2012_data.csv                             # Original dataset
+│   └── quantum_optimized_ENB_data.csv               # Expanded dataset
+├── output/
+│   ├── quantum_classical_analysis_report_*.txt      # Analysis reports
+│   └── quantum_classical_comparison_*.png           # Visualization plots
+├── README.md
+├── LICENSE
+└── Report.md                                        # Detailed research report
 ```
 
 ## Sample Results
@@ -105,12 +106,12 @@ quantum-kmeans/
 
 | Dataset | Method | Best k | Silhouette Score |
 |---------|--------|--------|------------------|
-| Original (768Ã—8) | Classical K-Means | 2 | 0.391 |
-| Original (768Ã—8) | Quantum SWAP Test | 2 | varies |
-| Original (768Ã—8) | Quantum Fidelity | 2 | varies |
-| Expanded (4998Ã—16) | Classical K-Means | 2 | 0.149 |
-| Expanded (4998Ã—16) | Quantum SWAP Test | 2 | varies |
-| Expanded (4998Ã—16) | Quantum Fidelity | 4 | varies |
+| Original (768×8) | Classical K-Means | 2 | 0.391 |
+| Original (768×8) | Quantum SWAP Test | 2 | varies |
+| Original (768×8) | Quantum Fidelity | 2 | varies |
+| Expanded (4998×16) | Classical K-Means | 2 | 0.149 |
+| Expanded (4998×16) | Quantum SWAP Test | 2 | varies |
+| Expanded (4998×16) | Quantum Fidelity | 4 | varies |
 
 ## Technical Details
 
@@ -118,16 +119,16 @@ quantum-kmeans/
 Classical data points are encoded into quantum states using **amplitude encoding**:
 
 ```python
-|ÏˆâŸ© = Î£áµ¢ Î±áµ¢|iâŸ©  where Î±áµ¢ = normalized_feature_i
+|ψ⟩ = Σᵢ αᵢ|i⟩  where αᵢ = normalized_feature_i
 ```
 
-This allows encoding N features using only logâ‚‚(N) qubits.
+This allows encoding N features using only log₂(N) qubits.
 
 ### Distance Computation
 Quantum distance between encoded states:
 
 ```python
-quantum_distance = âˆš(2(1 - |âŸ¨Ïˆâ‚|Ïˆâ‚‚âŸ©|))
+quantum_distance = √(2(1 - |⟨ψ₁|ψ₂⟩|))
 ```
 
 ### K-Means++ Initialization
@@ -136,7 +137,7 @@ Uses intelligent centroid initialization for better convergence.
 ## Limitations
 
 - **Simulation Overhead**: Quantum circuits run on simulators, not actual quantum hardware
-- **Scalability**: SWAP test requires O(nÃ—k) circuit executions per iteration
+- **Scalability**: SWAP test requires O(n×k) circuit executions per iteration
 - **Noise**: Statistical estimation introduces measurement uncertainty
 
 ## Future Work
@@ -148,12 +149,20 @@ Uses intelligent centroid initialization for better convergence.
 
 ## License
 
-Copyright © 2026 Sricharan Suresh (github.com/verycareful)
+This project is licensed under **Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)**.
 
-This project is licensed under the **[Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)**.
-You may use, modify, and distribute this software in accordance with the Apache 2.0 terms.
+[![CC BY-NC 4.0](https://licensebuttons.net/l/by-nc/4.0/88x31.png)](https://creativecommons.org/licenses/by-nc/4.0/)
 
-See the [LICENSE](LICENSE) file for the full license text and [NOTICE](NOTICE) for attribution information.
+**You are free to:**
+- Share and adapt the material
+- Use it for non-commercial purposes
+
+**On the condition that you:**
+- Provide appropriate attribution to the original author
+- Indicate if changes were made
+- Include a link to the license
+
+See the [full legal code](https://creativecommons.org/licenses/by-nc/4.0/legalcode) for details.
 
 ## References
 
@@ -170,5 +179,3 @@ See the [LICENSE](LICENSE) file for the full license text and [NOTICE](NOTICE) f
 <p align="center">
   <i>Exploring the intersection of quantum computing and machine learning</i>
 </p>
-
-
