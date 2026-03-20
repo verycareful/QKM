@@ -309,6 +309,12 @@ distance = √(2(1 - fidelity))
 ### 9.3 Final Remarks
 This research demonstrates that while quantum K-means can be implemented using genuine quantum circuits, achieving practical quantum advantage in clustering remains an open challenge. The fundamental difference between Euclidean and Hilbert space geometries, combined with simulation overhead, currently favors classical approaches. However, this work establishes important baselines and identifies specific areas where future quantum hardware and algorithm improvements may eventually provide benefits.
 
+## License
+
+- The software implementation and code in this repository are licensed under the Apache License 2.0.
+- The accompanying research paper is licensed under CC BY-NC 4.0.
+- See LICENSE for full software license text and NOTICE for attribution information.
+
 ---
 
 ## References

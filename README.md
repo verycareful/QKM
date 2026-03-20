@@ -3,7 +3,7 @@
 [![Qiskit](https://img.shields.io/badge/Qiskit-1.0+-6929C4?style=flat-square&logo=qiskit&logoColor=white)](https://qiskit.org/)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 [![Status: Archived](https://img.shields.io/badge/Status-Archived-lightgrey?style=flat-square)](.)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18876209.svg)](https://doi.org/10.5281/zenodo.18876209)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18802705.svg)](https://doi.org/10.5281/zenodo.18802705)
 
 > **A genuine quantum computing implementation of K-Means clustering using SWAP test and quantum fidelity-based distance metrics.**
 
@@ -11,7 +11,7 @@
 
 The accompanying research paper is archived on Zenodo under the CC BY-NC 4.0 license:
 
-> Sricharan, "Comparative Analysis of Classical and Quantum K-Means Clustering: SWAP Test and Fidelity-Based Approaches on Benchmark Datasets," Feb 2026. DOI: [10.5281/zenodo.18876209](https://doi.org/10.5281/zenodo.18876209)
+> Sricharan, "Comparative Analysis of Classical and Quantum K-Means Clustering: SWAP Test and Fidelity-Based Approaches on Benchmark Datasets," Feb 2026. DOI: [10.5281/zenodo.18802705](https://doi.org/10.5281/zenodo.18802705)
 
 ## Overview
 
