@@ -1,9 +1,19 @@
 # Quantum K-Means Clustering
+<!-- Language -->
 [![Python](https://img.shields.io/badge/Python-3.9+-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
+<!-- Quantum stack -->
 [![Qiskit](https://img.shields.io/badge/Qiskit-1.0+-6929C4?style=flat-square&logo=qiskit&logoColor=white)](https://qiskit.org/)
+[![Qiskit Aer](https://img.shields.io/badge/Qiskit%20Aer-simulator-6929C4?style=flat-square&logo=qiskit&logoColor=white)](https://qiskit.github.io/qiskit-aer/)
+<!-- Scientific stack -->
+[![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)](https://numpy.org/)
+[![pandas](https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)](https://scikit-learn.org/)
+[![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat-square)](https://matplotlib.org/)
+<!-- Publication -->
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18802705.svg)](https://doi.org/10.5281/zenodo.18802705)
+<!-- Project -->
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 [![Status: Archived](https://img.shields.io/badge/Status-Archived-lightgrey?style=flat-square)](.)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18802705.svg)](https://doi.org/10.5281/zenodo.18802705)
 
 > **A genuine quantum computing implementation of K-Means clustering using SWAP test and quantum fidelity-based distance metrics.**
 
